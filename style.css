@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 25vw; /* must be responsive */
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.buttons {
+    gap: 20px;
+}
+
+#result {
+    display: inline-block;
+    padding: 5px 15px;
+    color: white;
+}
+
+#userForm input {
+    box-shadow: 0 0 2px 1px rgb(175, 169, 169);
+}
