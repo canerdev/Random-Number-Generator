@@ -20,7 +20,7 @@ const generate = () => {
     } else if (Number(time.value) > (Number(upper.value) - Number(lower.   value) + 1)) {
         result.innerHTML = "i cannot pick that many numbers" 
         result.classList.add('bg-danger')
-    } else {
+    } else if (lower.value && upper.value) {
         picker()
     }
 
@@ -45,6 +45,7 @@ const generate = () => {
 generateBtn.addEventListener('click', generate)
 resetBtn.addEventListener('click', () => {
     result.innerHTML = ''
-    result.classList.remove('bg-dark') 
+    result.classList.remove('bg-dark')
+    result.classList.remove('bg-danger') 
 })
-g
+
